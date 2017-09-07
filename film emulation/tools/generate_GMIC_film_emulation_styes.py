@@ -405,7 +405,7 @@ for style, name in styles.items():
     except FileNotFoundError:
         pass
     # generate csv file with LAB color values of original test file and image
-    subprocess.run([ 'darktable-cli', file_name_png, file_name_pfm ])
+    subprocess.run([ 'darktable-cli', file_name_png, 'to_LAB_space.xmp', file_name_pfm ])
     # with film emulation applied
     with open(hald_name_pfm, 'rb') as file:
         l1=file.readline()
