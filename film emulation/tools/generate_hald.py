@@ -20,7 +20,7 @@ for blue in range(0, cube_size):
              i+=1
              A[i]=float(blue)/float(cube_size-1)
              i+=1
-for gray in range(0, 2*image_size):
+for gray in reversed(range(0, 2*image_size)):
     A[i]=float(gray)/float(2*image_size-1)
     i+=1
     A[i]=float(gray)/float(2*image_size-1)
